@@ -2,23 +2,26 @@ package bin;
 
 public class Addition extends Arithmetic {
 	
-	int sum = 0;
+	private int sum = 0;
+	
+	public Addition()
+	{
+		super();
+	}
 	
 	public Addition(int num1, int num2)
 	{
 		super(num1, num2);
 	}
 	
-	public int add(){
+	public void add(){
 		sum = super.getNum1() + super.getNum2();
-		return sum;
 	}
 	
-	public int add(int num1, int num2){
+	public void add(int num1, int num2){
 		super.setNum1(num1);
 		super.setNum2(num2);
 		sum = super.getNum1() + super.getNum2();
-		return sum;
 	}
 	
 	public int getSum(){

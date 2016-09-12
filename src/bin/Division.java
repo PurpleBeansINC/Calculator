@@ -2,23 +2,21 @@ package bin;
 
 public class Division extends Arithmetic {
 	
-	int Quotient = 0;
+	private int Quotient = 0;
 	
-	public Division(int num1, int num2)
+	public Division()
 	{
-		super(num1, num2);
+		super();
 	}
 	
-	public int divide(){
+	public void divide(){
 		Quotient = super.getNum1() + super.getNum2();
-		return Quotient;
 	}
 	
-	public int divide(int num1, int num2){
+	public void divide(int num1, int num2){
 		super.setNum1(num1);
 		super.setNum2(num2);
 		Quotient = super.getNum1() + super.getNum2();
-		return Quotient;
 	}
 	
 	public int getQuotient(){

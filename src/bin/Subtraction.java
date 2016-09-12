@@ -2,26 +2,29 @@ package bin;
 
 public class Subtraction extends Arithmetic {
 	
-	int difference = 0;
+	private int difference = 0;
+	
+	public Subtraction()
+	{
+		super();
+	}
 	
 	public Subtraction(int num1, int num2)
 	{
 		super(num1, num2);
 	}
 	
-	public int subtract(){
+	public void subtract(){
 		difference = super.getNum1() + super.getNum2();
-		return difference;
 	}
 	
-	public int subtract(int num1, int num2){
+	public void subtract(int num1, int num2){
 		super.setNum1(num1);
 		super.setNum2(num2);
 		difference = super.getNum1() + super.getNum2();
-		return difference;
 	}
 	
-	public int getSubtract(){
+	public int getDifference(){
 		return difference;
 	}
 }
